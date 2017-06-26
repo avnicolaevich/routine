@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.48 42.06"><title>Asset 10</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M11.13,33.49H85.35v8.57H11.13Z"/><path d="M48.22,0C28.34,0,8.78,5.1,0,14.43l11.14,9.21v6.21h74.2V23.64l11.14-9.21C85.88,4.57,66.91,0,48.22,0Zm-18,9.52,14,2.89a3.66,3.66,0,0,1,3.64-2.68h.64a3.66,3.66,0,0,1,3.64,2.68l14-2.89v4l-18,6.85-18-6.85Z"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tickets/Airlines" transform="translate(0.000000, -2.000000)" fill="#838383">
+            <g id="Page-1" transform="translate(0.000000, 2.000000)">
+                <polygon id="Fill-1" points="1.60639175 7.82932727 12.3189897 7.82932727 12.3189897 6.27132727 1.60639175 6.27132727"></polygon>
+                <g id="Group-4" transform="translate(0.000000, 0.011145)">
+                    <path d="M4.3653732,1.90094545 L6.39118763,2.42621818 C6.47461031,2.12167273 6.64347629,1.9504 6.91625979,1.93949091 L7.00906392,1.93949091 C7.28199175,1.9504 7.4507134,2.12167273 7.53413608,2.42621818 L9.55995052,1.90094545 L9.55995052,2.62149091 L6.9621567,3.86730909 L4.3653732,2.62149091 L4.3653732,1.90094545 M6.96028041,0.170763636 C4.08984742,0.167490909 1.26762062,1.0984 -2.88659794e-05,2.79385455 L1.60780619,4.46858182 L1.60780619,5.59767273 L12.3175175,5.59767273 L12.3175175,4.46858182 L13.9253526,2.79385455 C12.3953113,1.00094545 9.65679588,0.173672727 6.96028041,0.170763636" id="Fill-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

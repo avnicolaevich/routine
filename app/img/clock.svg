@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62"><title>Asset 11</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M31,0A31,31,0,1,0,62,31,31,31,0,0,0,31,0Zm0,10a2,2,0,0,1,2,2V30.19L44.44,41.59a2,2,0,0,1-2.84,2.84l-12-12A2,2,0,0,1,29,31V12a2,2,0,0,1,2-2Z"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tickets/Posted" fill="#838383">
+            <g id="Page-1">
+                <path d="M6.5,2.09677419 C6.73169355,2.09677419 6.91935484,2.28443548 6.91935484,2.51612903 L6.91935484,6.32974194 L9.31764516,8.72132258 C9.48140323,8.88508065 9.48140323,9.15367742 9.31764516,9.31764516 C9.15367742,9.48140323 8.88508065,9.48140323 8.72132258,9.31764516 L6.20519355,6.79480645 C6.12929032,6.71890323 6.08064516,6.61574194 6.08064516,6.5 L6.08064516,2.51612903 C6.08064516,2.28443548 6.26830645,2.09677419 6.5,2.09677419 Z M6.5,0 C2.9101129,0 0,2.9101129 0,6.5 C0,10.0898871 2.9101129,13 6.5,13 C10.0898871,13 13,10.0898871 13,6.5 C13,2.9101129 10.0898871,0 6.5,0 Z" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

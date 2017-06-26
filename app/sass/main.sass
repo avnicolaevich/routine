@@ -149,7 +149,8 @@ ul, li
 	max-width: 950px
 	width: 80%
 	&__header
-		display: inline-block
+		display: block
+		height: 55px
 		width: 100%
 		padding: 11px
 		color: rgb(239, 235, 240)
@@ -186,6 +187,24 @@ ul, li
 	&__img
 		float: left
 		max-width: 250px
+	&__content
+		position: relative
+		background-color: rgb(247, 247, 247)
+		padding: 23px 20px
+		&-item
+			float: left
+			padding-right: 115px
+			&:last-child
+				padding-right: 20px
+		&-info
+			color: rgb(131, 131, 131)
+			font-family: $roboto_light
+			font-size: 0.750em
+			padding-bottom: 6px
+		&-description
+			font-family: $roboto_medium
+			font-size: 0.875em
+			
 /* SECTIONS FLIGHT STYLES END */
 
 @import "media" // Every in down
