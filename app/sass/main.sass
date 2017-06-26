@@ -39,6 +39,7 @@ html, body
 
 body
 	font-size: 16px
+	color: $color_text
 	min-width: 320px
 	position: relative
 	line-height: 1.15
@@ -142,13 +143,15 @@ ul, li
 /* SECTIONS FLIGHT STYLES START */
 .flight-list
 	margin-top: 60px
-	text-align: center
+	text-align: left
 	&__header
+		text-align: center
 		font-family: $roboto_black
 	&__month
+		text-align: center
 		font-family: $roboto_light
 	&__item
-		margin-top: 28px
+		margin-top: 40px
 		
 .flight
 	float: left
@@ -190,18 +193,25 @@ ul, li
 			padding: 0
 			width: 100px
 			font-size: 0.750em
+			text-align: center
 	&__img
 		float: left
 		max-width: 250px
+		max-height: 136px
 	&__content
 		position: relative
 		background-color: rgb(247, 247, 247)
 		padding: 23px 20px
+		&-img
+			display: block
+			float: left
+			margin-right: 10px
 		&-item
 			float: left
-			padding-right: 115px
+			margin-right: 106px
+			text-align: left
 			&:last-child
-				padding-right: 20px
+				margin-right: 20px
 		&-info
 			color: rgb(131, 131, 131)
 			font-family: $roboto_light
@@ -210,7 +220,28 @@ ul, li
 		&-description
 			font-family: $roboto_medium
 			font-size: 0.875em
-			
+	&__btn
+		margin-top: 40px
+		padding: 0
+		font-family: $roboto_bold
+		font-size: 0.875em
+		&-text
+			padding: 0 27px
+		&-sup
+			display: inline-block
+			background-color: rgba(255, 255, 255, 0.2)
+			padding: 15px
+		&-icon
+			opacity: 0.4
+			width: 18px
+			height: 11px
+	&__text
+		margin-left: 30px
+		display: inline-block
+		vertical-align: middle
+		line-height: 1.6
+		max-width: 461px
+		font-size: 0.750em
 /* SECTIONS FLIGHT STYLES END */
 
 /*SECTIONS QUESTIONS*/
@@ -244,7 +275,6 @@ ul, li
 			display: none
 			width: 100%
 			max-width: 900px
-			color: rgb(117, 117, 117)
 			padding-top: 35px
 	&__btn
 		display: block
