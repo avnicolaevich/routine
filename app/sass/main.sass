@@ -35,7 +35,7 @@ body textarea:required:valid
 	color: #666
 
 html, body
-	height: 100%
+	min-height: 100%
 
 body
 	font-size: 16px
@@ -45,6 +45,8 @@ body
 	font-family: $roboto_light
 	overflow-x: hidden
 	opacity: 1
+	background: url(../img/footer-bg.png) no-repeat center bottom
+	background-size: 100% 711px
 
 h1, h2, h3, h4, h5, h6
 	padding: 0
@@ -55,6 +57,9 @@ h1
 h2
 	font-size: 2.625em
 
+h4
+	font-size: 0.875em
+	
 p
 	padding: 0
 	margin: 0
@@ -207,5 +212,56 @@ ul, li
 			font-size: 0.875em
 			
 /* SECTIONS FLIGHT STYLES END */
+
+/*SECTIONS QUESTIONS*/
+.questions
+	margin-top: 60px
+	&__header
+		text-align: center
+		font-family: $roboto_black
+		color: $color_header
+		padding-bottom: 60px
+	&__item
+		padding: 35px 0 35px
+		border-bottom: 1px solid $color_link
+		&-header
+			display: inline-block
+			font-family: $roboto_black
+			color: $color_text
+			width: 97%
+			&:hover, &:focus
+				cursor: pointer
+		&-link
+			display: inline-block
+			text-align: center
+			width: 25px
+			height: 25px
+			border-radius: 50%
+			border: 1px solid rgb(181, 168, 218)
+			background-color: rgb(217, 210, 236)
+			padding-top: 3px
+		&-description
+			display: none
+			width: 100%
+			max-width: 900px
+			color: rgb(117, 117, 117)
+			padding-top: 35px
+	&__btn
+		display: block
+		width: 100%
+		padding: 20px 40px
+		margin: auto
+		text-align: center
+		max-width: 240px
+		margin-top: 65px
+		margin-bottom: 18px
+		color: white
+		background-color: $color_btn
+		@include transition
+	&__remarque
+		text-align: center
+			
+
+/*SECTIONS QUESTIONS END*/
 
 @import "media" // Every in down
