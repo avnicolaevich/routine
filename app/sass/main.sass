@@ -21,6 +21,12 @@
 	color: #666
 	opacity: 1
 
+a
+	color: $color_link
+	text-decoration: none
+	@include transition
+	&:hover, &:focus
+		text-decoration: none
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -35,7 +41,7 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.75
+	line-height: 1.15
 	font-family: $roboto_light
 	overflow-x: hidden
 	opacity: 1
@@ -45,7 +51,9 @@ h1, h2, h3, h4, h5, h6
 	margin: 0
 
 h1
-	font-size: 3em
+	font-size: 3.750em
+h2
+	font-size: 2.625em
 
 p
 	padding: 0
@@ -60,22 +68,124 @@ ul, li
 	max-width: 100%
 	height: auto
 
-.container
-	width: 1200px
+.btn
+	display: inline-block
+	color: white
+	cursor: pointer
+	background-color: rgb(218, 19, 189)
+	padding: 3px
+	font-family: $roboto_regular
+	&:hover
+		//background-color: rgba(218, 19, 189, 0.8)
+		//background-color: rgb(255, 20, 223)
+
+.italic
+	font-family: $roboto_medium_italic
+
 .p0
 	padding: 0 
 
 .m0
 	margin: 0 
 
-	
-/* HEADER STYLES */
+/* HEADER STYLES START */
+.img-black
+	display: none
 .header
 	background: url("../img/header-bg.png") no-repeat
 	background-size: cover
-	height: 352px
+	padding: 40px 0 83px 0
+	&__login
+		text-align: right
+		font-size: 0.625em
+		color: white
+		&-close-btn
+			display: none
+		&-item
+			margin-right: -3px
+			border: 1px solid rgba(255, 255, 255, 0.5)
+			display: inline-block
+			padding: 6px 17px 5px 0
+			font-family: $roboto_medium
+		&-img
+			padding: 0 9px 0 7px
+		&-btn
+			width: 80px
+			padding: 7px 15px 6px 15px
+	&__hide
+		height: 0
+		width: 100%
+		position: fixed
+		z-index: 1
+		top: 0
+		left: 0
+		background-color: white
+		overflow-y: hidden
+		transition: 0.5s
+	&__icon
+		display: none
+	&__text
+		margin-top: 72px
+		color: white
+		text-align: center
+		&-header
+			font-family: $roboto_black
+		&-description
+			font-size: 2em
 /* HEADER STYLES END */
-	
-	
-	
+
+/* SECTIONS FLIGHT STYLES START */
+.flight-list
+	margin-top: 60px
+	text-align: center
+	&__header
+		font-family: $roboto_black
+	&__month
+		font-family: $roboto_light
+	&__item
+		
+.flight
+	float: left
+	max-width: 950px
+	width: 80%
+	&__header
+		display: inline-block
+		width: 100%
+		padding: 11px
+		color: rgb(239, 235, 240)
+		font-family: $roboto_regular
+		background-color: $color_default
+		&-img
+			float: left
+			height: 34px
+		&-start
+			float: left
+			width: 30%
+			text-align: left
+			font-size: 1.063em
+			line-height: 34px
+		&-finish
+			float: right
+			font-family: $roboto_bold
+			font-size: 1.250em
+			line-height: 34px
+		&-price
+			text-align: right
+			width: 70%
+			float: left
+			font-size: 1.375em
+			line-height: 34px
+			font-family: $roboto_bold
+		&-btn
+			float: right
+			line-height: 30px
+			margin: 2px
+			padding: 0
+			width: 100px
+			font-size: 0.750em
+	&__img
+		float: left
+		max-width: 250px
+/* SECTIONS FLIGHT STYLES END */
+
 @import "media" // Every in down

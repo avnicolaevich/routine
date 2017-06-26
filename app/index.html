@@ -21,35 +21,92 @@
 </head>
 
 <body>
+<!--HEADER START-->
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-xs-6">
                 <div class="header__brand">
                     <a href="/">
-                        <img src="img/logo-text-white.svg" alt="Routine Breakers">
+                        <img src="img/logo2.svg" alt="Routine Breakers">
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <form class="header__login">
-                    <input type="text" placeholder="Meet Robin">
-                    <button type="submit">Community</button>
-                </form>
+            <div class="col-xs-6">
+                <div class="header__login">
+                    <div class="header__login-item">
+                        <img class="header__login-img img-grey" src="img/user.svg" alt="Meet Robin">
+                        <img class="header__login-img img-black" src="img/user-black.svg" alt="Meet Robin">
+                        Meet Robin
+                    </div>
+                    <a class="btn header__login-btn" href="javascript:void(0);">Community</a>
+                </div>
+                <div class="header__hide" id="login" >
+                    <a class="header__hide-close" href="javascript:void(0)" onclick="closeLogin()">&times;</a>
+                    <div class="header__hide-content">
+                        <a class="btn header__hide-btn" href="javascript:void(0);">
+                            <img class="header__hide-img" src="img/user.svg" alt="user">
+                            Join
+                        </a>
+                    </div>
+                </div>
+                <a class="header__icon" href="javascript:void(0);" onclick="openLogin()">
+                    <img class="" src="img/bars.svg">
+                </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-xs-12">
                 <div class="header__text">
-                    <h1>We search, you travel</h1>
-                    <p>Become a Routine Breaker & save up to 75% in your next flight to Madrid</p>
+                    <h1 class="header__text-header">We search, you travel</h1>
+                    <p class="header__text-description">Become a Routine Breaker & save up</p>
+                    <p class="header__text-description">to 75% in your next flight to <span class="italic">Madrid</span></p>
                 </div>
-
             </div>
         </div>
     </div>
 </header>
+<!--HEADER END-->
+<!--SECTIONS FLIGHT START-->
+<section class="flight-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="flight-list__header">
+                    <h2>Found last month <a class="flight-list__month" href="javascript:void(0);">— May</a></h2>
+                </div>
+            </div>
+        </div>
+        <div class="flight-list__item">
+            <div class="row">
+                <div class="flight">
+                    <div class="flight__header">
+                        <div class="col-sm-6 p0">
+                        <div class="flight__header-start">
+                            Barcelona
+                        </div>
+                            <img class="flight__header-img" src="img/arrow-plane.svg" alt="">
+                            <div class="flight__header-finish">Amsterdam</div>
+                        </div>
+                        <div class="col-sm-6 p0">
+                            <div class="flight__header-price">
+                               $399
+                            </div>
+                            <a class="btn flight__header-btn" href="javascript:void(0);">
+                                Go to tickets
+                            </a>
+                        </div>
+                        <div class="flight__content">
 
+                        </div>
+                    </div>
+                </div>
+                <img class="flight__img" src="img/town-1.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!--SECTIONS FLIGHT END-->
 <script src="js/scripts.min.js"></script>
 
 </body>

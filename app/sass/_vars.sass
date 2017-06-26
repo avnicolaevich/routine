@@ -3,6 +3,8 @@ $roboto_black: "roboto_black", sans-serif
 $roboto_bold: "roboto_bold", sans-serif
 $roboto_light: "roboto_light", sans-serif
 $roboto_medium: "roboto_medium", sans-serif
+$roboto_regular: "roboto_regular", sans-serif
+$roboto_medium_italic: "roboto_medium_italic", sans-serif
 
 $color_btn: rgb(219, 19, 189)
 $color_text: rgb(74, 74, 74)
@@ -12,3 +14,27 @@ $color_default: rgb(78, 54, 146)
 $color_sub: rgb(176, 162, 215)
 $color_background: rgba(176, 162, 215, 48)
 
+@mixin transition
+	-webkit-transition: 0.4s ease
+	-moz-transition: 0.4s ease
+	-ms-transition: 0.4s ease
+	-o-transition: 0.4s ease
+	transition: 0.4s ease
+
+@mixin placeholder
+	&:focus::-webkit-input-placeholder
+		color: transparent
+	&:focus::-moz-placeholder
+		color: transparent
+	&:focus:-moz-placeholder
+		color: transparent
+	&:focus:-ms-input-placeholder
+		color: transparent
+	&::-webkit-input-placeholder
+		color: white
+	&::-moz-placeholder
+		color: white
+	&:-moz-placeholder
+		color: white
+	&:-ms-input-placeholder
+		color: white
