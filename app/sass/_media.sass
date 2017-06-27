@@ -4,18 +4,86 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
+	.flight
+		&__header
+			&-start
+				width: 25%
+		&__content
+			&-item
+				margin-right: 62px
+				&:last-child
+					margin-right: 20px
+		&__img
+			max-width: 194px
 	.questions__item-header
 		width: 96%
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+	.flight
+		&__header
+			&-start
+				width: 36%
+			&-img
+				display: none
+				&-responsive
+					display: block
+					margin-left: 10px
+					float: left
+					height: 34px
+			&-price
+				width: 60%
+		&__content
+			&-item
+				margin-right: 18px
+				&:last-child
+					margin-right: 20px
+		&__img
+			max-width: 150px
 	.questions__item-header
 		width: 95%
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+	.flight
+		position: relative
+		width: 100%
+		&__img
+			float: none
+			width: 100%
+			max-width: 250px
+			margin: 0 auto
+		&__header
+			&-price
+				//position: absolute
+				//bottom: 0
+				//margin: 0 auto
+		&__responsive
+			position: absolute
+			top: 150px
+			z-index: 2
+		&__content
+			&-img
+				float: none
+				display: inline-block
+			&-item
+				width: 90%
+				display: inline-block
+				float: none
+			&-info
+				display: inline-block
+			&-description
+				display: inline-block
+			&-img:nth-child(5)
+				display: none
+			&-item:nth-child(6)
+				display: none
+			&-img:nth-child(7)
+				display: none
+			&-item:nth-child(8)
+				display: none
 	.questions__item-header
 		width: 93%
 
