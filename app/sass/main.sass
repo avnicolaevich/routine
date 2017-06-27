@@ -59,6 +59,11 @@ h1
 h2
 	font-size: 2.625em
 
+h3
+	font-size: 1.5em
+	color: $color_link
+	font-family: $roboto_medium
+
 h4
 	font-size: 1em
 	
@@ -306,6 +311,11 @@ ul, li
 
 /*SECTION HELP STYLES END */
 /*SECTIONS COMMUNITY*/
+.pictures
+	height: 510px
+	background-image: url("../img/community-15.png"), url("../img/community-16.png"), url("../img/community-6.png"), url("../img/community-7.png"), url("../img/community-8.png"), url("../img/community-5.png"), url("../img/community-4.png"), url("../img/community-10.png"), url("../img/community-11.png"), url("../img/community-13.png"), url("../img/community-14.png")
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat
+	background-position: 20% 0%, 23% 45%, 10% 90%, 28% 80%, 48% 90%, 57% 5%, 57% 60%, 86% 84%, 70% 95%, 92% 56%, 95% 11%
 .community
 	margin-top: 60px
 	&__header
@@ -317,47 +327,48 @@ ul, li
 		font-size: 2.250em
 		color: $color_header
 	&__images
-		height: 510px
-		background-image: url("../img/community-15.png"), url("../img/community-16.png"), url("../img/community-6.png"), url("../img/community-7.png"), url("../img/community-8.png"), url("../img/community-5.png"), url("../img/community-4.png"), url("../img/community-10.png"), url("../img/community-11.png"), url("../img/community-13.png"), url("../img/community-14.png")
-		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat
-		background-position: 10% 0%, 12% 45%, 13% 90%, 28% 80%, 38% 90%, 40% 35%, 48% 60%, 66% 60%, 70% 95%, 78% 40%, 88% 5%
-		&-first
-			position: relative
-			top: 12%
-			left: 23%
+		position: relative
+		width: 163px
+		height: 163px
+		border-radius: 50%
+		padding: 140px 0
+		&:hover	&-firstitem, &:hover &-seconditem, &:hover &-thirditem
+			visibility: visible
+			opacity: 1
+		&-firstitem
+			@include help
+			@include transition
+		&-seconditem
+			@include help
+			@include transition
+		&-thirditem
+			@include transition
+			visibility: hidden
+			width: 368px
+			height: 176px
+			background-color: rgb(255, 255, 255)
+			color: rgb(105, 105, 105)
+			padding: 35px 45px
+			box-shadow: 2.7px 6.4px 16px rgba(20, 20, 21, 0.18)
+			position: absolute
+			z-index: 999
+			top: 50%
+			right: 130%
+			opacity: 0
+			&::after
+				content: " "
+				position: absolute
+				bottom: 58%
+				left: 109%
+				margin-left: -33px
+				border-width: 15px
+				border-style: solid
+				border-color: transparent transparent transparent rgb(255, 255, 255)
+				transform: rotateX( 180deg )
+		&-link
+			display: inline-block
 			width: 163px
 			height: 163px
-			border: 2px solid rgb(106, 79, 184)
-			border-radius: 50%
-			@include transition
-			&:hover, &:focus
-				@include circle
-		&-second
-			position: relative
-			top: 13%
-			left: 43%
-			width: 123px
-			height: 121px
-			border-radius: 50%
-			@include transition
-			&:hover, &:focus
-				@include circle
-		&-third
-			position: relative
-			top: 65%
-			left: 37%
-			width: 115px
-			height: 114px
-			border-radius: 50%
-			@include transition
-			&:hover, &:focus
-				@include circle
-		&-fourth
-			position: relative
-			top: 57%
-			left: 57%
-			width: 103px
-			height: 102px
 			border-radius: 50%
 			@include transition
 			&:hover, &:focus

@@ -49,6 +49,10 @@
 			
 		&__img
 			max-width: 150px
+	.community__images-seconditem
+		left: 110%
+		width: 310px
+		padding: 35px 35px
 	.questions__item-header
 		width: 95%
 
@@ -126,6 +130,40 @@
 			text-align: center
 			margin: 0 auto
 			max-width: 235px
+	.pictures
+		background-image: none
+	.community__btn
+		margin: 120px auto 20px
+	.community__images
+		margin: auto
+		padding: 84px 0 320px
+	.community__images-firstitem,
+	.community__images-seconditem,
+	.community__images-thirditem
+		visibility: hidden
+		width: 278px
+		height: 215px
+		background-color: rgb(255, 255, 255)
+		color: rgb(105, 105, 105)
+		padding: 35px 45px
+		box-shadow: 2.7px 6.4px 16px rgba(20, 20, 21, 0.18)
+		position: absolute
+		z-index: 999
+		top: 65%
+		left: -35%
+		opacity: 0
+		&::after
+			content: " "
+			position: absolute
+			bottom: 100%
+			left: 56%
+			margin-left: -33px
+			border-width: 15px
+			border-style: solid
+			border-color: rgb(255, 255, 255) transparent transparent transparent
+			transform: rotateX( 180deg )
+	.community__images-thirditem
+		right: 0
 	.questions__item-header
 		width: 93%
 

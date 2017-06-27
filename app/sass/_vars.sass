@@ -40,4 +40,28 @@ $color_background: rgba(176, 162, 215, 48)
 		color: white
 
 @mixin circle
-	box-shadow:	0 0 0 8px #fff,	0 0 0 12px #b0a2d7,	0 0 0 22px #fff, 0 0 0 26px #b0a2d7, 0 0 0 42px #fff, 0 0 0 46px #b0a2d7, 0 0 0 64px #fff, 0 0 0 68px #b0a2d7, 0 0 0 90px #fff, 0 0 0 94px #b0a2d7
+	box-shadow: 0 0 0 8px #fff,	0 0 0 12px #b0a2d7,	0 0 0 22px #fff, 0 0 0 26px #b0a2d7, 0 0 0 42px #fff, 0 0 0 46px #b0a2d7, 0 0 0 64px #fff, 0 0 0 68px #b0a2d7, 0 0 0 90px #fff, 0 0 0 94px #b0a2d7
+
+@mixin help
+	visibility: hidden
+	width: 368px
+	height: 176px
+	background-color: rgb(255, 255, 255)
+	color: rgb(105, 105, 105)
+	padding: 35px 45px
+	box-shadow: 2.7px 6.4px 16px rgba(20, 20, 21, 0.18)
+	position: absolute
+	z-index: 999
+	top: 50%
+	left: 130%
+	opacity: 0
+	&::after
+		content: " "
+		position: absolute
+		bottom: 58%
+		left: 1%
+		margin-left: -33px
+		border-width: 15px
+		border-style: solid
+		border-color: transparent rgb(255, 255, 255) transparent transparent
+		transform: rotateX( 180deg )
