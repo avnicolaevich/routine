@@ -23,7 +23,7 @@ function replacePlus (target) {
         $(target.parentElement).css('border-bottom', 'none');
     } else {
         target.innerText = '+';
-        $(target.parentElement).css('border-bottom', '1px solid rgb(106, 79, 184)');
+        $(target.parentElement).css('border-bottom', '1px dotted rgb(106, 79, 184)');
     }
 }
 
