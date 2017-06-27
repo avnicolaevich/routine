@@ -5,6 +5,7 @@
 *
 	box-sizing: border-box
 
+
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
@@ -160,7 +161,7 @@ ul, li
 	&__img
 		float: right
 		max-width: 250px
-		height: auto
+		height: 137px
 		overflow: hidden
 	&__header
 		display: block
@@ -204,17 +205,22 @@ ul, li
 	&__content
 		position: relative
 		background-color: rgb(247, 247, 247)
-		padding: 24px 20px
-		&-img
-			display: block
-			float: left
-			margin-right: 10px
-		&-item
-			float: left
-			margin-right: 106px
+		padding: 23px 20px
+		&-list
+			list-style: none
 			text-align: left
+		&-item
+			margin-right: 97px
+			display: inline-block
 			&:last-child
 				margin-right: 20px
+		&-img
+			display: inline-block
+			margin: -4px 10px 0 0
+			vertical-align: top
+		&-sup
+			display: inline-block
+			list-style: none
 		&-info
 			color: rgb(131, 131, 131)
 			font-family: $roboto_light
@@ -225,6 +231,7 @@ ul, li
 			font-size: 0.875em
 	&__btn
 		margin-top: 40px
+		margin-left: -15px
 		padding: 0
 		font-family: $roboto_bold
 		font-size: 0.875em
@@ -239,7 +246,8 @@ ul, li
 			width: 18px
 			height: 11px
 	&__text
-		margin-left: 30px
+		margin-top: 40px
+		margin-left: -15px
 		display: inline-block
 		vertical-align: middle
 		line-height: 1.6
