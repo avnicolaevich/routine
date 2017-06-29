@@ -136,10 +136,12 @@
 		margin: 120px auto 20px
 	.community__images
 		margin: 84px auto 160px
+	//.community__images-link
+	//	@include circle
 	.community__images-firstitem,
 	.community__images-seconditem,
 	.community__images-thirditem
-		visibility: hidden
+		visibility: visible
 		width: 278px
 		height: 215px
 		background-color: rgb(255, 255, 255)
@@ -150,7 +152,7 @@
 		z-index: 999
 		top: 110%
 		left: -35%
-		opacity: 0
+		opacity: 1
 		&::after
 			content: " "
 			position: absolute

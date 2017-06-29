@@ -1,6 +1,6 @@
-$(function() {
+$( document ).ready(function() {
 
-
+    communityHover()
 
 });
 
@@ -34,3 +34,22 @@ function openLogin() {
 function closeLogin() {
     document.getElementById("login").style.height = "0%";
 }
+
+
+function communityHover() {
+    $(".community__images").hover(function(){
+        var community = $('.community');
+        community.find($('.community__images-link--active')).removeClass('community__images-link--active');
+        community.find($('.community__images--active')).removeClass('community__images--active');
+
+        $(this).find($('.community__images-link')).addClass('community__images-link--active');
+        $(this).children().eq(1).addClass('community__images--active');
+
+    }, function(){
+        $(this).find($('.community__images-link')).removeClass('community__images-link--active');
+        $(this).children().eq(1).removeClass('community__images--active')
+    });
+}
+
+
+

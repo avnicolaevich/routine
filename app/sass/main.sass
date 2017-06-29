@@ -110,7 +110,6 @@ ul, li
 	&__login
 		text-align: right
 		font-size: 0.625em
-		color: white
 		&-close-btn
 			display: none
 		&-item
@@ -119,10 +118,11 @@ ul, li
 			display: inline-block
 			padding: 6px 17px 5px 0
 			font-family: $roboto_medium
+			color: white
 		&-img
 			padding: 0 9px 0 7px
 		&-btn
-			width: 80px
+			//width: 80px
 			padding: 7px 15px 6px 15px
 	&__hide
 		height: 0
@@ -154,12 +154,13 @@ ul, li
 			line-height: 42px
 			text-align: center
 			width: 215px
-			border: 1px solid white
-			background: $color_link
+			border: 1px solid rgba(255, 255, 255, 0.5)
+			border-right: none
+			background: none
 			padding: 0
 		&-sign
 			display: inline-block
-			margin-left: -3px
+			margin-left: -4px
 			height: 42px
 			line-height: 42px
 			text-align: center
@@ -353,9 +354,9 @@ ul, li
 		height: 163px
 		border-radius: 50%
 		margin: 140px 0
-		&:hover	&-firstitem, &:hover &-seconditem, &:hover &-thirditem
-			visibility: visible
-			opacity: 1
+		//&:hover	&-firstitem, &:hover &-seconditem, &:hover &-thirditem
+		//	visibility: visible
+		//	opacity: 1
 		&-firstitem
 			@include help
 			@include transition
@@ -386,13 +387,18 @@ ul, li
 				border-style: solid
 				border-color: transparent transparent transparent rgb(255, 255, 255)
 				transform: rotateX( 180deg )
+		&--active
+			visibility: visible
+			opacity: 1
 		&-link
 			display: inline-block
 			width: 163px
 			height: 163px
 			border-radius: 50%
 			@include transition
-			&:hover, &:focus
+			//&:hover, &:focus, &--active
+			//	@include circle
+			&--active
 				@include circle
 	&__btn
 		display: block
