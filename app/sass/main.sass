@@ -621,6 +621,8 @@ ul, li
 .flight__review
 	display: inline-block
 
+.choice
+	margin-bottom: 400px
 
 /*CHOSEN*/
 /* @group Base */
@@ -628,9 +630,9 @@ ul, li
 	position: relative
 	width: 200px!important
 	float: right
-	display: inline-block
+	display: block
 	vertical-align: middle
-	font-size: 13px
+	font-size: 16px
 	user-select: none
 
 .chosen-container *
@@ -638,9 +640,9 @@ ul, li
 
 .chosen-container .chosen-drop
 	position: absolute
-	top: 100%
+	top: 50px
 	right: 0
-	width: 100%
+	width: 200px
 	z-index: 1010
 	border: 1px solid rgb(49, 28, 109)
 	border-top: 0
@@ -813,10 +815,14 @@ ul, li
 /* @end */
 /* @group Multi Chosen */
 .chosen-container-multi .chosen-choices
-	position: relative
-	overflow: hidden
+	position: absolute
+	top: 0
+	left: 0
+	//overflow: hidden
 	margin: 0
 	padding: 0 15px
+	width: 100%
+	height: 50px
 	line-height: 50px
 	border: 1px solid rgb(106, 79, 184)
 	background-color: rgb(106, 79, 184)
@@ -849,20 +855,22 @@ ul, li
 
 .chosen-container-multi .chosen-choices li.search-choice
 	position: relative
+	display: inline-block
 	right: 424%
 	width: 170px
-	margin: 3px 5px 3px 0
-	padding: 3px 20px 3px 5px
-	border: 1px solid #aaa
+	height: 50px
+	//margin: 3px 5px 3px 0
+	padding: 0 25px 0 10px
+	border: 1px solid rgb(49, 28, 109)
 	max-width: 100%
-	border-radius: 3px
-	background-color: #eeeeee
-	background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%)
-	background-size: 100% 19px
-	background-repeat: repeat-x
+	//border-radius: 3px
+	//background-color: #eeeeee
+	//background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%)
+	//background-size: 100% 19px
+	//background-repeat: repeat-x
 	background-clip: padding-box
-	box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05)
-	color: #333
+	//box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05)
+	color: $color_header
 	line-height: 50px
 	cursor: default
 
@@ -871,16 +879,15 @@ ul, li
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close
 	position: absolute
-	top: 4px
-	right: 3px
+	top: 20px
+	right: 15px
 	display: block
-	width: 12px
-	height: 12px
-	background: url("../img/chosen-sprite.png") -42px 1px no-repeat
-	font-size: 1px
+	width: 14px
+	height: 14px
+	background: url("../img/choice-close.png") no-repeat
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover
-	background-position: -42px -10px
+	//background-position: -42px -10px
 
 .chosen-container-multi .chosen-choices li.search-choice-disabled
 	padding-right: 5px
