@@ -353,6 +353,121 @@ ul, li
 		max-width: 461px
 		font-size: 0.750em
 /* SECTIONS FLIGHT STYLES END */
+
+/*SECTIONS CHOICE*/
+.choice-list
+	margin-top: 60px
+	text-align: left
+	&__header
+		text-align: center
+		font-family: $roboto_black
+		color: $color_header
+	&__month
+		text-align: center
+		font-family: $roboto_light
+	&__item
+		margin-top: 40px
+.choice
+	float: left
+	max-width: 950px
+	width: 80%
+	&__img
+		float: right
+		max-width: 250px
+		height: 137px
+		overflow: hidden
+	&__header
+		display: block
+		height: 55px
+		width: 100%
+		padding: 11px
+		color: rgb(239, 235, 240)
+		font-family: $roboto_regular
+		background-color: $color_default
+		&-img
+			float: left
+			height: 34px
+			&-responsive
+				display: none
+		&-start
+			float: left
+			width: 30%
+			text-align: left
+			font-size: 1.063em
+			line-height: 34px
+		&-finish
+			float: right
+			font-family: $roboto_bold
+			font-size: 1.250em
+			line-height: 34px
+		&-price
+			text-align: right
+			width: 70%
+			float: left
+			font-size: 1.375em
+			line-height: 34px
+			font-family: $roboto_bold
+		&-btn
+			float: right
+			line-height: 30px
+			margin: 2px
+			padding: 0
+			width: 100px
+			font-size: 0.750em
+			text-align: center
+	&__content
+		position: relative
+		background-color: rgb(247, 247, 247)
+		padding: 23px 20px
+		&-list
+			list-style: none
+			text-align: left
+		&-item
+			margin-right: 97px
+			display: inline-block
+			&:last-child
+				margin-right: 20px
+		&-img
+			display: inline-block
+			margin: -4px 10px 0 0
+			vertical-align: top
+		&-sup
+			display: inline-block
+			list-style: none
+		&-info
+			color: rgb(131, 131, 131)
+			font-family: $roboto_light
+			font-size: 0.750em
+			padding-bottom: 6px
+		&-description
+			font-family: $roboto_medium
+			font-size: 0.875em
+	&__btn
+		margin-top: 40px
+		margin-left: -15px
+		padding: 0
+		font-family: $roboto_bold
+		font-size: 0.875em
+		&-text
+			padding: 0 27px
+		&-sup
+			display: inline-block
+			background-color: rgba(255, 255, 255, 0.2)
+			padding: 15px
+		&-icon
+			opacity: 0.4
+			width: 18px
+			height: 11px
+	&__text
+		margin-top: 40px
+		margin-left: -15px
+		display: inline-block
+		vertical-align: middle
+		line-height: 1.6
+		max-width: 461px
+		font-size: 0.750em
+/*SECTIONS CHOICE END*/
+
 /*SECTION BREAKERS STYLES START */
 .breakers
 	margin-top: 60px
@@ -604,11 +719,11 @@ ul, li
 			width: 16px
 			height: 15px
 
-.flight__main
+.choice__main
 	float: none
 	margin: auto
 
-.flight__header-main
+.choice__header-main
 	background: rgb(128, 123, 141)
 
 .btn__main
@@ -618,11 +733,11 @@ ul, li
 .price__main
 	color: rgb(191, 189, 198)
 
-.flight__review
+.choice__review
 	display: inline-block
 
-.choice
-	margin-bottom: 400px
+.chose
+	margin-bottom: 200px
 
 /*CHOSEN*/
 /* @group Base */
@@ -765,7 +880,7 @@ ul, li
 .chosen-container .chosen-results
 	color: white
 	position: relative
-	overflow-x: hidden
+	//overflow-x: hidden
 	overflow-y: auto
 	margin: 0 4px 4px 0
 	padding: 0 0 0 4px
@@ -815,10 +930,10 @@ ul, li
 /* @end */
 /* @group Multi Chosen */
 .chosen-container-multi .chosen-choices
-	position: absolute
+	position: relative
 	top: 0
 	left: 0
-	//overflow: hidden
+	//overflow: auto
 	margin: 0
 	padding: 0 15px
 	width: 100%
@@ -856,10 +971,9 @@ ul, li
 .chosen-container-multi .chosen-choices li.search-choice
 	position: relative
 	display: inline-block
-	right: 424%
-	width: 170px
+	right: 586%
+	//width: 170px
 	height: 50px
-	//margin: 3px 5px 3px 0
 	padding: 0 25px 0 10px
 	border: 1px solid rgb(49, 28, 109)
 	max-width: 100%
@@ -875,11 +989,14 @@ ul, li
 	cursor: default
 
 .chosen-container-multi .chosen-choices li.search-choice span
+	margin-right: 25px
+
+.chosen-container-multi .chosen-choices li.search-choice span
 	word-wrap: break-word
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close
 	position: absolute
-	top: 20px
+	top: 18px
 	right: 15px
 	display: block
 	width: 14px

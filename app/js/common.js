@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
     communityHover();
 
-    $(".choice__target").chosen({
+    $(".chose__target").chosen({
         no_results_text: "No results match",
         placeholder_text_multiple: "Type",
         max_selected_options: 10

@@ -4,19 +4,22 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
-	//.flight
-	//	&__header
-	//		&-start
-	//			width: 25%
-	//	&__content
-	//		&-item
-	//			margin-right: 53px
-	//			&:last-child
-	//				margin-right: 20px
-	//		&-img
-	//			margin-right: 6px
-	//	&__img
-	//		max-width: 194px
+	.choice
+		&__header
+			&-start
+				width: 25%
+		&__content
+			&-item
+				margin-right: 53px
+				&:last-child
+					margin-right: 20px
+			&-img
+				margin-right: 6px
+		&__img
+			max-width: 194px
+	.choice__btn-text
+		padding: 0 12px
+
 	.flight__btn-text
 		padding: 0 12px
 
@@ -26,29 +29,29 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
-	.flight
-		//&__header
-		//	&-start
-		//		width: 36%
-		//	&-img
-		//		display: none
-		//		&-responsive
-		//			display: block
-		//			margin-left: 10px
-		//			float: left
-		//			height: 34px
-		//	&-price
-		//		width: 60%
-		//&__content
-		//	&-item
-		//		margin-right: 24px
-		//		&:last-child
-		//			margin-right: 0
-		//	&-img
-		//		margin-right: 2px
-		//
-		//&__img
-		//	max-width: 150px
+	.choice
+		&__header
+			&-start
+				width: 36%
+			&-img
+				display: none
+				&-responsive
+					display: block
+					margin-left: 10px
+					float: left
+					height: 34px
+			&-price
+				width: 60%
+		&__content
+			&-item
+				margin-right: 24px
+				&:last-child
+					margin-right: 0
+			&-img
+				margin-right: 2px
+
+		&__img
+			max-width: 150px
 	.community__images-seconditem
 		left: 110%
 		width: 310px
@@ -59,6 +62,77 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+	.choice
+		float: none
+		position: relative
+		margin: 0 auto
+		width: 100%
+		max-width: 300px
+		&__img
+			float: none
+			width: 100%
+			max-width: 300px
+			margin: 0 auto
+			&>img
+				width: 300px
+		&__header
+			&-price
+				width: 140px
+				height: 34px
+				color: $color_link
+				border: 1px solid $color_sub
+				border-right: none
+				box-sizing: border-box
+				text-align: center
+			&-btn
+				width: 140px
+				margin: 0
+				height: 34px
+				line-height: 34px
+		&__responsive
+			position: absolute
+			top: 150px
+			z-index: 2
+			width: 280px
+		&__content
+			padding: 15px 20px 70px 20px
+			&-item
+				width: 100%
+				margin-right: 0
+				&:nth-child(3)
+					display: none
+				&:nth-child(4)
+					display: none
+			&-img
+				width: 8%
+				margin: 0 15px 0 0
+			&-sup
+				width: 84%
+			&-info
+				display: inline-block
+				width: 45%
+			&-description
+				display: inline-block
+				width: 45%
+				padding-left: 6px
+		&__btn
+			display: block
+			margin: 40px auto 20px
+			height: 60px
+			max-width: 300px
+			width: 100%
+			text-align: center
+			&-text
+				line-height: 60px
+			&-sup
+				float: right
+				padding: 22px 12px
+		&__text
+			display: block
+			padding: 0 15px
+			text-align: center
+			margin: 0 auto
+			max-width: 235px
 	.flight
 		//float: none
 		//position: relative
@@ -168,8 +242,6 @@
 	.questions__item-header
 		width: 93%
 
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
 	h1
@@ -241,6 +313,14 @@
 			width: 250px
 			padding: 1px 0 0
 			margin: auto
+	.choice__price
+		padding: 15px
+		font-size: 3em
+	.choice__header-img
+		display: none
+	.choice__header-img-responsive
+		display: inline-block
+		height: 22px
 	.flight__price
 		padding: 15px
 		font-size: 3em
