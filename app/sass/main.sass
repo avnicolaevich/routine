@@ -113,8 +113,6 @@ ul, li
 	margin: 0 
 
 /* HEADER STYLES START */
-.img-black
-	display: none
 .header
 	background: url("../img/header-bg.png") no-repeat
 	background-size: cover
@@ -126,13 +124,20 @@ ul, li
 			display: none
 		&-item
 			margin-right: -3px
-			border: 1px solid rgba(255, 255, 255, 0.5)
-			border-right: 0
 			display: inline-block
 			padding: 6px 17px 5px 0
 			font-family: $roboto_medium
-			color: white
+			&--white
+				border: 1px solid rgba(255, 255, 255, 0.5)
+				border-right: 0
+				color: white
+			&--black
+				border: 1px solid $color_text
+				border-right: 0
+				color: $color_text
 		&-img
+			width: 26px
+			height: 10px
 			padding: 0 9px 0 7px
 		&-btn
 			//width: 80px
@@ -683,16 +688,17 @@ ul, li
 		text-align: right
 		font-size: 0.750em
 
+		
+		
 /*------MAIN---------PAGE-------*/
-
-.main__header
-	padding-top: 40px
-
 .main
 	background: none
 	&__footer
 		padding-top: 35px
-		margin-bottom: 50px
+/*SECTION MAIN HEADER STYLES START*/
+.main__header
+	padding: 40px 0 83px 0
+/*SECTION MAIN HEADER STYLES END*/
 .chat
 	background: url("../img/people-bg.jpg") no-repeat
 	margin-top: 80px
