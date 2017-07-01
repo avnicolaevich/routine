@@ -205,7 +205,7 @@ ul, li
 /* SECTIONS FLIGHT STYLES START */
 .flight-list
 	margin-top: 60px
-	text-align: left
+	text-align: center
 	&__header
 		text-align: center
 		font-family: $roboto_black
@@ -217,34 +217,35 @@ ul, li
 		margin-top: 40px
 		
 .flight
+	display: inline-block
+	max-width: 350px
 	&__header
 		background-color: $color_default
 		padding: 0 12px
-		line-height: 55px
+		line-height: 35px
 		color: rgb(239, 235, 240)
 		font-family: $roboto_regular
 		text-align: center
 		&-start
 			float: left
 		&-img
-			height: 34px
+			height: 22px
 			&-responsive
 				display: none
 		&-end
 			float: right
 	&__img
 		width: 50%
-		height: 155px
+		height: 100px
 	&__price
-		padding: 25px
-		line-height: 1
+		line-height: 100px
 		float: right
 		width: 50%
-		height: 155px
+		//height: 100px
 		background-color: $color_default
 		color: rgb(239, 235, 240)
 		text-align: center
-		font-size: 3.750em
+		font-size: 2.500em
 		font-family: $roboto_bold
 		&-btn
 			line-height: 30px
