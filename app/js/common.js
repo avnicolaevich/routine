@@ -5,7 +5,8 @@ $( document ).ready(function() {
     $(".chose__target").chosen({
         no_results_text: "No results match",
         placeholder_text_multiple: "Type",
-        max_selected_options: 10
+        max_selected_options: 10,
+        width: "100%"
     });
 
 });
