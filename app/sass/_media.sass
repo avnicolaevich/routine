@@ -4,7 +4,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
-	.choice
+	.flight-main
 		&__header
 			&-start
 				width: 25%
@@ -17,8 +17,9 @@
 				margin-right: 6px
 		&__img
 			max-width: 194px
-	.choice__btn-text
-		padding: 0 12px
+		&__btn
+			&-text
+				padding: 0 12px
 
 	.flight__btn-text
 		padding: 0 12px
@@ -29,7 +30,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
-	.choice
+	.flight-main
 		&__header
 			&-start
 				width: 36%
@@ -52,6 +53,19 @@
 
 		&__img
 			max-width: 150px
+	.missed
+		&__header
+			&-start
+				width: 36%
+			&-img
+				display: none
+				&-responsive
+					display: block
+					margin-left: 10px
+					float: left
+					height: 34px
+			&-price
+				width: 60%
 	.community__images-seconditem
 		left: 110%
 		width: 310px
@@ -62,7 +76,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
-	.choice
+	.flight-main
 		float: none
 		position: relative
 		margin: 0 auto
@@ -131,8 +145,25 @@
 			display: block
 			padding: 0 15px
 			text-align: center
-			margin: 0 auto
+			margin: 10px auto
 			max-width: 235px
+			
+	.missed
+		float: none
+		position: relative
+		margin: 0 auto
+		width: 100%
+		max-width: 300px
+		&__header
+			height: 106px
+			
+			&-img-responsive
+				height: 32px
+			&-price
+				text-align: left
+				margin-top: 25px
+			&-btn
+				margin-top: 25px
 	.flight
 		//float: none
 		//position: relative
@@ -312,12 +343,12 @@
 			width: 250px
 			padding: 1px 0 0
 			margin: auto
-	.choice__price
+	.flight-main__price
 		padding: 15px
 		font-size: 3em
-	.choice__header-img
+	.flight-main__header-img
 		display: none
-	.choice__header-img-responsive
+	.flight-main__header-img-responsive
 		display: inline-block
 		height: 22px
 	.flight__price

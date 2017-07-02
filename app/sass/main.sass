@@ -59,7 +59,7 @@ body
 	font-family: $roboto_light
 	overflow-x: hidden
 	opacity: 1
-	background: url(../img/footer-bg.png) no-repeat center bottom
+	background: url(../img/footer-bg.jpg) no-repeat center bottom
 	background-size: 100% 711px
 
 h1, h2, h3, h4, h5, h6
@@ -114,7 +114,7 @@ ul, li
 
 /* HEADER STYLES START */
 .header
-	background: url("../img/header-bg.png") no-repeat
+	background: url("../img/header-bg.jpg") no-repeat
 	background-size: cover
 	padding: 40px 0 83px 0
 	&__login
@@ -193,7 +193,7 @@ ul, li
 		position: relative
 		&::after
 			position: absolute
-			content: url("../img/arrow-down.png")
+			content: url("../img/arrow-down.svg")
 			top: -12px
 			right: 36%
 	&__activity
@@ -361,120 +361,6 @@ ul, li
 		text-align: left
 /* SECTIONS FLIGHT STYLES END */
 
-/*SECTIONS CHOICE*/
-.choice-list
-	margin-top: 60px
-	text-align: left
-	&__header
-		text-align: center
-		font-family: $roboto_black
-		color: $color_header
-	&__month
-		text-align: center
-		font-family: $roboto_light
-	&__item
-		margin-top: 40px
-.choice
-	float: left
-	max-width: 950px
-	width: 80%
-	&__img
-		float: right
-		max-width: 250px
-		height: 137px
-		overflow: hidden
-	&__header
-		display: block
-		height: 55px
-		width: 100%
-		padding: 11px
-		color: rgb(239, 235, 240)
-		font-family: $roboto_regular
-		background-color: $color_default
-		&-img
-			float: left
-			height: 34px
-			&-responsive
-				display: none
-		&-start
-			float: left
-			width: 30%
-			text-align: left
-			font-size: 1.063em
-			line-height: 34px
-		&-finish
-			float: right
-			font-family: $roboto_bold
-			font-size: 1.250em
-			line-height: 34px
-		&-price
-			text-align: right
-			width: 70%
-			float: left
-			font-size: 1.375em
-			line-height: 34px
-			font-family: $roboto_bold
-		&-btn
-			float: right
-			line-height: 30px
-			margin: 2px
-			padding: 0
-			width: 100px
-			font-size: 0.750em
-			text-align: center
-	&__content
-		position: relative
-		background-color: rgb(247, 247, 247)
-		padding: 23px 20px
-		&-list
-			list-style: none
-			text-align: left
-		&-item
-			margin-right: 97px
-			display: inline-block
-			&:last-child
-				margin-right: 20px
-		&-img
-			display: inline-block
-			margin: -4px 10px 0 0
-			vertical-align: top
-		&-sup
-			display: inline-block
-			list-style: none
-		&-info
-			color: rgb(131, 131, 131)
-			font-family: $roboto_light
-			font-size: 0.750em
-			padding-bottom: 6px
-		&-description
-			font-family: $roboto_medium
-			font-size: 0.875em
-	&__btn
-		margin-top: 40px
-		margin-left: -15px
-		padding: 0
-		font-family: $roboto_bold
-		font-size: 0.875em
-		&-text
-			padding: 0 27px
-		&-sup
-			display: inline-block
-			background-color: rgba(255, 255, 255, 0.2)
-			padding: 15px
-		&-icon
-			opacity: 0.4
-			width: 18px
-			height: 11px
-	&__text
-		margin-top: 40px
-		margin-left: -15px
-		display: inline-block
-		vertical-align: middle
-		line-height: 1.6
-		max-width: 461px
-		font-size: 0.750em
-/*SECTIONS CHOICE END*/
-
 /*SECTION BREAKERS STYLES START */
 .breakers
 	margin-top: 60px
@@ -505,7 +391,7 @@ ul, li
 /*SECTION HELP STYLES START */
 .help
 	margin-top: 80px
-	background: url("../img/plane-bg.png") no-repeat
+	background: url("../img/plane-bg.jpg") no-repeat
 	background-position: 60% 100%
 	background-size: cover
 	&__header
@@ -687,8 +573,6 @@ ul, li
 	&__copyright
 		text-align: right
 		font-size: 0.750em
-
-		
 		
 /*------MAIN---------PAGE-------*/
 .main
@@ -699,6 +583,167 @@ ul, li
 .main__header
 	padding: 40px 0 83px 0
 /*SECTION MAIN HEADER STYLES END*/
+
+/*SECTIONS FLIGHTS MAIN STYLES START*/
+.flights-main
+	margin-top: 60px
+	text-align: left
+	&__header
+		text-align: center
+		font-family: $roboto_black
+		color: $color_header
+		margin-bottom: 20px
+	&__item
+		margin-top: 40px
+.flight-main
+	float: left
+	max-width: 950px
+	width: 80%
+	&__img
+		float: right
+		max-width: 250px
+		height: 137px
+		overflow: hidden
+	&__header
+		display: block
+		height: 55px
+		width: 100%
+		padding: 11px
+		color: rgb(239, 235, 240)
+		font-family: $roboto_regular
+		background-color: $color_default
+		&-img
+			float: left
+			height: 34px
+			&-responsive
+				display: none
+		&-start
+			float: left
+			width: 30%
+			text-align: left
+			font-size: 1.063em
+			line-height: 34px
+		&-finish
+			float: right
+			font-family: $roboto_bold
+			font-size: 1.250em
+			line-height: 34px
+		&-price
+			text-align: right
+			width: 70%
+			float: left
+			font-size: 1.375em
+			line-height: 34px
+			font-family: $roboto_bold
+		&-btn
+			float: right
+			line-height: 30px
+			margin: 2px
+			padding: 0
+			width: 100px
+			font-size: 0.750em
+			text-align: center
+	&__content
+		position: relative
+		background-color: rgb(247, 247, 247)
+		padding: 23px 20px
+		&-list
+			list-style: none
+			text-align: left
+		&-item
+			margin-right: 97px
+			display: inline-block
+			&:last-child
+				margin-right: 20px
+		&-img
+			display: inline-block
+			margin: -4px 10px 0 0
+			vertical-align: top
+		&-sup
+			display: inline-block
+			list-style: none
+		&-info
+			color: rgb(131, 131, 131)
+			font-family: $roboto_light
+			font-size: 0.750em
+			padding-bottom: 6px
+		&-description
+			font-family: $roboto_medium
+			font-size: 0.875em
+	&__text
+		margin: 10px auto
+		max-width: 663px
+		text-align: center
+		font-size: 0.875em
+	&__review
+		text-align: center
+		font-family: $roboto_medium
+		margin-top: 20px
+	&__btn
+		margin: 40px 13px 0 13px
+		font-family: $roboto_bold
+		font-size: 0.875em
+		line-height: 42px
+		&-text
+			padding: 0 43px
+/*SECTIONS FLIGHTS MAIN STYLES END*/
+/*SECTIONS MISSED STYLES START*/
+.missed-list
+	margin-top: 80px
+	text-align: left
+	&__header
+		text-align: center
+		font-family: $roboto_black
+		color: $color_header
+	&__item
+		margin: 0 auto
+		margin-top: 40px
+		max-width: 900px
+
+.missed
+	&__header
+		display: block
+		height: 55px
+		width: 100%
+		padding: 11px
+		color: rgb(239, 235, 240)
+		font-family: $roboto_regular
+		background-color: rgb(128, 123, 141)
+		&-img
+			float: left
+			height: 34px
+			&-responsive
+				display: none
+		&-start
+			float: left
+			width: 30%
+			text-align: left
+			font-size: 1.063em
+			line-height: 34px
+		&-finish
+			float: right
+			font-family: $roboto_bold
+			font-size: 1.250em
+			line-height: 34px
+		&-price
+			text-align: right
+			width: 70%
+			float: left
+			font-size: 1.375em
+			line-height: 34px
+			font-family: $roboto_bold
+		&-btn
+			margin-top: 5px
+			float: right
+			padding: 0
+			width: 55px
+			background-color: rgba(255, 255, 255, 0.2)
+			line-height: 24px
+			font-family: $roboto_regular
+			font-size: 0.750em
+			text-align: center
+/*SECTIONS MISSED STYLES END*/
+/*SECTIONS CHAT STYLES START*/
 .chat
 	background: url("../img/people-bg.jpg") no-repeat
 	margin-top: 80px
@@ -733,27 +778,7 @@ ul, li
 			opacity: 0.8
 			width: 16px
 			height: 15px
-
-.choice__main
-	float: none
-	margin: auto
-
-.choice__header-main
-	background: rgb(128, 123, 141)
-
-.btn__main
-	background-color: rgb(153, 149, 164)
-	color: rgb(191, 188, 198)
-
-.price__main
-	color: rgb(191, 189, 198)
-
-.choice__review
-	display: inline-block
-
-.chose
-	margin-bottom: 200px
-
+/*SECTIONS CHAT STYLES END*/
 /*CHOSEN*/
 /* @group Base */
 .chosen-container
@@ -1016,7 +1041,7 @@ ul, li
 	display: block
 	width: 14px
 	height: 14px
-	background: url("../img/choice-close.png") no-repeat
+	background: url("../img/choice-close.svg") no-repeat
 
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover
 	//background-position: -42px -10px
