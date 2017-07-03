@@ -4,6 +4,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
+	.header
+		&__appeal
+			&::after
+				right: 33%
+	
 	.flight-main
 		&__header
 			&-start
@@ -30,6 +35,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+	.header
+		&__appeal
+			&::after
+				right: 27%
 	.flight-main
 		&__header
 			&-start
@@ -76,6 +85,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+	.header
+		&__appeal
+			&::after
+				display: none
 	.flight-main
 		float: none
 		position: relative
@@ -329,6 +342,11 @@
 			display: inline-block
 			position: absolute
 			right: 10px
+	.main
+		background: url(../img/footer-bg.jpg) center bottom no-repeat
+		background-size: 100% 711px
+		&__header
+			padding-top: 20px
 	.header__text-description
 		font-size: 1.250em
 	.header__thumbtacks
@@ -409,9 +427,7 @@
 	.chosen-container-multi .chosen-choices .search-choice .search-choice-close,
 	.chosen-container .chosen-results-scroll-down span,
 	.chosen-container .chosen-results-scroll-up span
-		background-image: url("../img/chosen-sprite@2x.png") !important
-		background-size: 52px 37px !important
-		background-repeat: no-repeat !important
+		background-repeat: no-repeat
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
 	/**/

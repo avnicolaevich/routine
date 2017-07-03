@@ -54,8 +54,8 @@ function communityHover() {
 }
 
 function chosen() {
-
-    $("#chose__target").chosen({
+    var chose = $("#chose__target");
+    chose.chosen({
         no_results_text: "No results match",
         placeholder_text_multiple: "Type",
         // max_selected_options: 10,
@@ -64,43 +64,31 @@ function chosen() {
         function () {
             var chosenDrop = $('.chosen-drop');
             var searchField = $('.search-field');
-            var position = searchField.position();
+            // updatePosisitonChose();
 
-            if (position.left == 0) {
-                chosenDrop.css('left', $('.chose__town').width()/2-19);
-            } else {
-                chosenDrop.css('left', position.left);
-                chosenDrop.css('top', position.top+50);
-            }
-            console.log(position.left);
             searchField.width('200px');
             chosenDrop.width('202px');
         }
     );
 
-    var updatePosition = function (event) {
-        if ( event ) {
-            console.log( event );
-        } else {
-            console.log( "this didn't come from an event!" );
-        }
-    };
-
-    $('#chose__target').trigger('chosen:close', updatePosition());
-
-    updatePosition();
+    chose.on('change', function(){
+        $('.search-choice-close').on('click', function () {
+            updatePosisitonChose()
+        });
+    });
+    chose.on('change', function(){
+        $('.chosen-results').on('click', function () {
+            console.log(2223);
+            updatePosisitonChose()
+        });
+    });
 }
 
-$('a.search-choice-close').click(function() {
+function updatePosisitonChose() {
     var chosenDrop = $('.chosen-drop');
     var searchField = $('.search-field');
     var position = searchField.position();
 
-    console.log(111);
-    // if (position.left == 0) {
-    //     chosenDrop.css('left', $('.chose__town').width()/2-19);
-    // } else {
     chosenDrop.css('left', position.left);
-    // chosenDrop.css('top', position.top+50);
-    // }
-});
+    chosenDrop.css('top', position.top+50);
+}
