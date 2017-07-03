@@ -3,6 +3,7 @@ $( document ).ready(function() {
     communityHover();
 
     chosen();
+
 });
 
 $(".questions__item-link").click(function (event) {
@@ -61,23 +62,45 @@ function chosen() {
         width: "100%"
     }).change(
         function () {
-            var widths;
-            widths = $.map($('.search-choice'), function (e) {
-                return $(e).outerWidth();
-            });
-            var sumWidth = 0;
-            for (var key in widths) {
-                if (sumWidth >= ($('.chosen-choices').width()-150)) {
-                    sumWidth = widths[key]
-                } else {
-                    sumWidth += (widths[key] + 20)
-                }
-            }
-            $('.search-field').width('200px');
             var chosenDrop = $('.chosen-drop');
-            chosenDrop.width('200px');
-            chosenDrop.css('left', sumWidth);
+            var searchField = $('.search-field');
+            var position = searchField.position();
+
+            if (position.left == 0) {
+                chosenDrop.css('left', $('.chose__town').width()/2-19);
+            } else {
+                chosenDrop.css('left', position.left);
+                chosenDrop.css('top', position.top+50);
+            }
+            console.log(position.left);
+            searchField.width('200px');
+            chosenDrop.width('202px');
         }
     );
 
+    var updatePosition = function (event) {
+        if ( event ) {
+            console.log( event );
+        } else {
+            console.log( "this didn't come from an event!" );
+        }
+    };
+
+    $('#chose__target').trigger('chosen:close', updatePosition());
+
+    updatePosition();
 }
+
+$('a.search-choice-close').click(function() {
+    var chosenDrop = $('.chosen-drop');
+    var searchField = $('.search-field');
+    var position = searchField.position();
+
+    console.log(111);
+    // if (position.left == 0) {
+    //     chosenDrop.css('left', $('.chose__town').width()/2-19);
+    // } else {
+    chosenDrop.css('left', position.left);
+    // chosenDrop.css('top', position.top+50);
+    // }
+});
