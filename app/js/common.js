@@ -2,13 +2,7 @@ $( document ).ready(function() {
 
     communityHover();
 
-    $(".chose__target").chosen({
-        no_results_text: "No results match",
-        placeholder_text_multiple: "Type",
-        max_selected_options: 10,
-        width: "100%"
-    });
-
+    chosen();
 });
 
 $(".questions__item-link").click(function (event) {
@@ -58,5 +52,32 @@ function communityHover() {
     });
 }
 
+function chosen() {
 
+    $("#chose__target").chosen({
+        no_results_text: "No results match",
+        placeholder_text_multiple: "Type",
+        // max_selected_options: 10,
+        width: "100%"
+    }).change(
+        function () {
+            var widths;
+            widths = $.map($('.search-choice'), function (e) {
+                return $(e).outerWidth();
+            });
+            var sumWidth = 0;
+            for (var key in widths) {
+                if (sumWidth >= ($('.chosen-choices').width()-150)) {
+                    sumWidth = widths[key]
+                } else {
+                    sumWidth += (widths[key] + 20)
+                }
+            }
+            $('.search-field').width('200px');
+            var chosenDrop = $('.chosen-drop');
+            chosenDrop.width('200px');
+            chosenDrop.css('left', sumWidth);
+        }
+    );
 
+}
