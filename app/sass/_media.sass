@@ -6,8 +6,9 @@
 @media only screen and (max-width : 1199px)
 	.header
 		&__appeal
+			margin-left: 25%
 			&::after
-				right: 33%
+				right: 58%
 	
 	.flight-main
 		&__header
@@ -37,8 +38,9 @@
 @media only screen and (max-width : 991px)
 	.header
 		&__appeal
+			margin-left: 18%
 			&::after
-				right: 27%
+				right: 50%
 	.flight-main
 		&__header
 			&-start
@@ -87,8 +89,7 @@
 @media only screen and (max-width : 767px)
 	.header
 		&__appeal
-			&::after
-				display: none
+			display: none
 	.flight-main
 		float: none
 		position: relative
@@ -285,7 +286,19 @@
 		right: 0
 	.questions__item-header
 		width: 93%
-
+	.footer
+		padding-top: 70px
+		padding-bottom: 30px
+	.footer__brand-logo
+		display: none
+	.footer__brand-logo-responsive
+		display: block
+		margin: 0 auto 65px
+		text-align: center
+	.footer__description
+		padding-bottom: 10px
+	.footer__copyright
+		text-align: center
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
 	h1
@@ -342,9 +355,6 @@
 			display: inline-block
 			position: absolute
 			right: 10px
-	.main
-		background: url(../img/footer-bg.jpg) center bottom no-repeat
-		background-size: 100% 711px
 		&__header
 			padding-top: 20px
 	.header__text-description
@@ -405,21 +415,6 @@
 		margin-top: 50px
 	.questions__item-description
 		font-size: 1.125em
-	.footer
-		padding-top: 70px
-		padding-bottom: 30px
-	.footer__brand-logo
-		display: none
-	.footer__brand-logo-responsive
-		display: block
-		margin: 0 auto 65px
-		text-align: center
-	.footer__description
-		color: white
-		padding-bottom: 10px
-	.footer__copyright
-		text-align: center
-		color: white
 	.chosen-rtl .chosen-search input[type="text"],
 	.chosen-container-single .chosen-single abbr,
 	.chosen-container-single .chosen-single div b,

@@ -57,7 +57,7 @@ function chosen() {
     var chose = $("#chose__target");
     chose.chosen({
         no_results_text: "No results match",
-        placeholder_text_multiple: "Type",
+        placeholder_text_multiple: "Add city",
         // max_selected_options: 10,
         width: "100%"
     }).change(
