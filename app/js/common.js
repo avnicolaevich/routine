@@ -70,10 +70,10 @@ function chosen() {
 
     chose.on('change', function(){
         $('.search-choice-close').on('click', function () {
-            updatePosisitonChose();
             if ($(this).attr('data-option-array-index') == 0) {
                 $('.chosen-container').width('200px');
             }
+            updatePosisitonChose();
         });
     });
     chose.on('change', function(){
