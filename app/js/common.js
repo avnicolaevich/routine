@@ -61,14 +61,11 @@ function chosen() {
         no_results_text: "No results match",
         placeholder_text_multiple: "Add city",
         // max_selected_options: 10,
-        width: "100%"
+        width: "200px"
     }).change(
         function () {
-            var chosenDrop = $('.chosen-drop');
-            var searchField = $('.search-field');
-            // updatePosisitonChose();
-            searchField.width('200px');
-            chosenDrop.width('202px');
+            var container = $('.chosen-container');
+            container.width('100%');
         }
     );
 
@@ -79,7 +76,6 @@ function chosen() {
     });
     chose.on('change', function(){
         $('.chosen-results').on('click', function () {
-            console.log(2223);
             updatePosisitonChose();
         });
     });
