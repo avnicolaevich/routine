@@ -4,6 +4,8 @@ $( document ).ready(function() {
 
     chosen();
 
+    updatePosisitonChose();
+
 });
 
 $(".questions__item-link").click(function (event) {
@@ -65,7 +67,6 @@ function chosen() {
             var chosenDrop = $('.chosen-drop');
             var searchField = $('.search-field');
             // updatePosisitonChose();
-
             searchField.width('200px');
             chosenDrop.width('202px');
         }
@@ -79,7 +80,7 @@ function chosen() {
     chose.on('change', function(){
         $('.chosen-results').on('click', function () {
             console.log(2223);
-            updatePosisitonChose()
+            updatePosisitonChose();
         });
     });
 }
@@ -87,8 +88,11 @@ function chosen() {
 function updatePosisitonChose() {
     var chosenDrop = $('.chosen-drop');
     var searchField = $('.search-field');
+    var placeholder = $('.chosen-search-input');
+    var chose = $("#chose__target");
     var position = searchField.position();
 
     chosenDrop.css('left', position.left);
     chosenDrop.css('top', position.top+50);
+    placeholder.attr("placeholder", "Add city");
 }
