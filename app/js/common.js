@@ -64,8 +64,7 @@ function chosen() {
         width: "200px"
     }).change(
         function () {
-            var container = $('.chosen-container');
-            container.width('100%');
+            $('.chosen-container').width('100%');
         }
     );
 
@@ -73,8 +72,7 @@ function chosen() {
         $('.search-choice-close').on('click', function () {
             updatePosisitonChose();
             if ($(this).attr('data-option-array-index') == 0) {
-                var container = $('.chosen-container');
-                container.width('200px');
+                $('.chosen-container').width('200px');
             }
         });
     });
