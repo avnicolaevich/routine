@@ -71,7 +71,11 @@ function chosen() {
 
     chose.on('change', function(){
         $('.search-choice-close').on('click', function () {
-            updatePosisitonChose()
+            updatePosisitonChose();
+            if ($(this).attr('data-option-array-index') == 0) {
+                var container = $('.chosen-container');
+                container.width('200px');
+            }
         });
     });
     chose.on('change', function(){
