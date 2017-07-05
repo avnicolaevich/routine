@@ -87,7 +87,6 @@ function updatePosisitonChose() {
     var chosenDrop = $('.chosen-drop');
     var searchField = $('.search-field');
     var placeholder = $('.chosen-search-input');
-    var chose = $("#chose__target");
     var position = searchField.position();
 
     chosenDrop.css('left', position.left);
